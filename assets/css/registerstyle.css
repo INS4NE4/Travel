@@ -1,0 +1,107 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box !important;
+}
+body {
+    background-color: rgba(0, 0, 0, 0.911);
+}
+                    /* logo */
+.logo {
+    position: absolute !important;
+    top: 75px;
+}
+.logo img{
+    width:127px;
+    padding: 10px;
+    border-radius: 15px;
+}   
+                    /* Register Form  */
+.register_container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  padding: 62px 10px;
+}
+.register_form {
+  width: 750px;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  padding: 70px 15px;
+  border-radius: 10px;
+  background-color: rgb(32, 83, 90);
+}
+.register_form input[type=text],
+.register_form input[type=password],
+.register_form input[type=email]{
+    padding: 8px 10px;
+    width: 100%;
+    outline: none;
+    margin: 18px 0px !important;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    font-size: 14px;
+    background-color: transparent;
+    border:none;
+    border-bottom: 2px solid rgb(0, 225, 255);
+}
+.register_form input::placeholder{
+    font-style: italic;
+    color: rgb(167, 167, 167);
+}
+.full_name, .password {
+    display: flex;
+}
+.full_name input:first-child, .password input:first-child{
+    margin: 18px 10px 18px 0px !important;
+}
+.full_name input:nth-child(2), .password input:nth-child(2){
+    margin: 18px 0px 18px 10px !important;
+}
+.gender {
+    display: flex;
+    align-items: center;
+    margin: 18px 0px 32px 0px;
+    color: rgb(255, 255, 255);
+}
+.gender input {
+    margin: 0px 7px;
+}
+.register_form input[type=date]{
+    width: 190px;
+    padding:8px 15px;
+}
+.register_info{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    margin: 35px 0px;
+}
+.register_info input[type=checkbox]{
+    width: 17px;
+    height: 17px;
+}
+.register_info label {
+    margin: 0px 7px;
+    color: rgb(255, 255, 255);
+}
+.register_button {
+    padding: 10px;
+    border: 0px;
+    border-radius: 5px;
+    outline: none;
+}
+.register_info a {
+    color: rgb(0, 238, 255);
+}
+
+ @media screen and (max-width:720px){
+    .full_name, .password{
+        flex-direction: column;
+    }
+    .full_name input[type=text], .password input[type=password]{ 
+        margin: 15px 0px !important;
+    }
+} 

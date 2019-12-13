@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/registerstyle.css">
+</head>
+<body>
+        <div class="register_container">
+            <form method="POST" action="#" class="register_form">
+                    <a href="index.html" class="logo"><img src="assets/images/travel.png" alt=""></a>
+                <div class="full_name">
+                    <input type="text" placeholder="First Name" required>
+                    <input type="text" placeholder="Last Name" required>
+                </div>
+                <input class="username" type="text" placeholder="Username" required>
+                <div class="password">
+                    <input type="password" name="password" id="pass1" placeholder="Password" required>
+                    <input type="password" name="password" id="pass2" placeholder="Confirm Password" required>
+                </div>
+                <div class="mail">
+                    <input type="email" name="email" id="email" placeholder="Type your E-Mail" required>
+                </div>
+                <div class="gender">
+                    <label>Gender: </label>
+                    <input type="radio" name="gender" id="gender_male">
+                    <label for="gender_male">Male</label>
+                    <input type="radio" name="gender" id="gender_female">
+                    <label for="gender_female">Female</label>
+                </div>
+                <input type="date" name="" id="#">
+                <div class="register_info">
+                    <input type="checkbox" id="agree_statements">
+                    <label for="agree_statements">I agree all statements in <a class="terms_of_service" href="#">Terms of fervice</a></label>
+                </div>
+                <button class="register_button">Register</button>
+                </form>
+        </div>
+</body>
+</html>
