@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
@@ -62,21 +63,32 @@
     </div>
 </header>
                                 <!-- Slider -->
-<div class="slider">
-    <div class="previous_slide">
-        <a class="pre_slider" href="#">
-            <i class="fas fa-chevron-left"></i>
-        </a>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide first_slide"> 
+            <div class="buttons">
+                <button>Show on the map</button>
+                <button>More info</button>
+            </div>
+        </div>
+        <div class="swiper-slide second_slide">
+            <div class="buttons">
+                <button>Show on the map</button>
+                <button>More info</button>
+            </div>
+        </div>
+        <div class="swiper-slide third_slide">
+            <div class="buttons">
+                <button>Show on the map</button>
+                <button>More info</button>
+            </div>
+        </div>
     </div>
-    <div class="buttons">
-        <button>Show on the map</button>
-        <button>More info</button>
-    </div>
-    <div class="next_slide">
-            <a class="next_slider" href="#">
-                    <i class="fas fa-chevron-right"></i>
-            </a>
-    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
 </div>
                                 <!-- Search -->
 <section class="search">
@@ -209,7 +221,7 @@
     </div>
 </footer>
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
 <script src="./assets/javascript/script.js"></script>
 </body>
 </html>
