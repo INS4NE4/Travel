@@ -4,6 +4,7 @@
     list-style-type: none;
     text-decoration: none;
     box-sizing: border-box;
+    scroll-behavior: smooth;
   }
   body {
     font-family: Arial, Helvetica, sans-serif;
@@ -127,8 +128,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 65px;
-    margin: 4px auto;
+    padding: 4px 65px;
+    margin: 0px auto;
     transition: 0.8s;
 }
 .logo img {
@@ -532,7 +533,7 @@ button:focus, input:focus {
     }
                     /* Header */
     .page_header {
-        padding: 0px 18px;
+        padding: 4px 18px;
     }
     nav {
         display: none;
@@ -570,6 +571,7 @@ button:focus, input:focus {
         position: absolute;
         top: 30px;
         right: 13px;
+        z-index: 4;
         width: 50px;
         height: 50px;
         background-color: rgba(224, 224, 224, 0.952);
@@ -578,11 +580,12 @@ button:focus, input:focus {
     }
     nav.open {
         position: absolute;
+        top: 0px;
         left: 0;
+        z-index: 4;
         width: 100%;
         height: calc(100vh - 0px) !important;
         background-color:rgb(0, 0, 0);
-        top: 0px;
         display: flex;
         flex-direction: column;
         justify-content: center;
