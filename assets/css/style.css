@@ -6,34 +6,48 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
   }
-  body {
+body {
     font-family: Arial, Helvetica, sans-serif;
     overflow-x: hidden;
-  }
-                    /* Login */
-  .login {
+}
+                /* Login */
+.login {
     display: flex;
     justify-content: flex-start;
     padding: 10px 0px 10px 65px;
     background-color: rgb(44, 62, 80);
     transition: 1s;
-  }
-  .login li {
+}
+.login li {
     margin: 0px 10px;
-  }
-  .login_item_link, .tell {
+}
+.login_item_link, .tell {
     color: rgb(255, 255, 255);
     transition: 0.5s;
     letter-spacing: 1px;
-  }
-  .login_item_link:hover, .tell:hover, span{
+}
+.login_item_link:hover, .tell:hover, span{
     color: rgb(0, 255, 255);
-  }
+}
                     /* Login Form */
-  #login_container{
+#login_container{
     display: none;
   }
-  .login_toggler {
+.login_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0%);
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    display: flex !important;
+    justify-content: center;
+    align-items:center;
+    background-color: rgba(0, 0, 0, 0.911);
+    transition: 1s;
+  }
+.login_toggler {
     width: 30px;
     display: flex;
     justify-content: center;
@@ -46,15 +60,14 @@
     border-radius: 5px;
     cursor: pointer;
   }
-  .login_toggler span {
+.login_toggler span {
     content: " ";
     display: block;
     width: 25px;
     height: 3px;
     background-color: transparent;
-    
-  }
-  .login_toggler span::before {
+}
+.login_toggler span::before {
     content: " ";
     display: block;
     width: 25px;
@@ -62,16 +75,16 @@
     background-color: rgb(0, 0, 0);
     transform: rotate(45deg);
     transform:translateY(2px) rotate(-45deg);
-  }
-  .login_toggler span::after {
+}
+.login_toggler span::after {
     content: " ";
     display: block;
     width: 25px;
     height: 3px;
     background-color: rgb(0, 0, 0);
     transform:translateY(-1px) rotate(45deg);
-  }
-  .login_form_container {
+}
+.login_form_container {
     position: relative;
     z-index: 1;
     width: 450px;
@@ -80,14 +93,14 @@
     background-color: rgb(32, 83, 90);
     opacity: 1;
     transition: 1s !important;
-  }
-  .login_form {
+}
+.login_form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 110px 39px;
-  }
-  .login_form input[type=text], .login_form input[type=password]{
+}
+.login_form input[type=text], .login_form input[type=password]{
     padding: 8px 10px;
     width: 100%;
     outline: none;
@@ -97,31 +110,31 @@
     background-color: transparent;
     border:none;
     border-bottom: 2px solid rgb(0, 225, 255);
-  }
-  .login_form input::placeholder{
+}
+.login_form input::placeholder{
     font-style: italic;
     color: rgb(167, 167, 167);
-  }
-  .login_info{
+}
+.login_info{
     width: 100%;
     display: flex;
     align-items: center;
     margin: 35px 0px;
-  }
-  .login_info input[type=checkbox]{
+}
+.login_info input[type=checkbox]{
     width: 17px;
     height: 17px;
-  }
-  .login_info label {
+}
+.login_info label {
     margin: 0px 7px;
     color: white;
-  }
-  .login_button {
+}
+.login_button {
     padding: 10px;
     border: 0px;
     border-radius: 5px;
     outline: none;
-  }
+}
                     /* Header */
 .page_header {
     position: relative;
@@ -507,20 +520,6 @@ button:focus, input:focus {
         justify-content: flex-start;
         padding: 8px;
     }
-    .login_container {
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: translate(0%);
-        width: 100%;
-        height: 100vh;
-        z-index: 2;
-        display: flex !important;
-        justify-content: center;
-        align-items:center;
-        background-color: rgba(0, 0, 0, 0.911);
-        transition: 1s;
-      }
     .login_item {
         margin: 7px 7px;
     }
